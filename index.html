@@ -8,9 +8,16 @@
   <article>
     <h1>アンケート</h1>
     <form action="survey.php" method="post">
-      <p>メールアドレス: <input type="text" name="email" size="50" placeholder="please enter email"></p>
-      <p>ログイン: <input type="password" name="password"></p>
-      <input type="hidden" name="user_id" value="23423">
+      <p>メールアドレス: <input type="text" name="email"></p>
+      <p>City:
+        <select name="city" multiple size="5">
+          <option value="tokyo">Tokyo</option>
+          <option value="nagoya">Nagoya</option>
+          <option value="osaka" selected>Osaka</option>
+          <option value="kyoto">Kyoto</option>
+          <option value="fukuoka">Fukuoka</option>
+        </select>
+      </p>
       <p><input type="submit" value="送信！"></p>
     </form>
   </article>
